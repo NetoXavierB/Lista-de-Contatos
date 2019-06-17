@@ -1,0 +1,279 @@
+.bg-style{
+  background-color: #6b6b6b;
+}
+/*  Painel  */
+.main-panel{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-color: #fbfbfb69;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 30px;
+  background-color: #fbfbfb3b;
+}
+/*  Formulário  */
+.txtEntradas{
+  margin-top: 1%;
+  margin-left: 8%;
+  width: 80%;
+  padding: 2% 2%;
+  border-width: 2px;
+  border-color: #bfbfbf;
+  color: black;
+  background-color: #fbfbfbbd;
+}
+/*  Titulo da página */
+.txtIni{
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+}
+/*  Botões  */
+.btn{
+  width: 125px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  background-color: #404244b3;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #e6e6e6;
+  border-width: 0px;
+  cursor: pointer;
+}
+.btnVoltar{
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #404244b3;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #e6e6e6;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+/*  BreakPoints */
+/*  Mobile First  */
+/*  Small devices - Smartphones */
+@media screen and (min-width: 320px){
+  .main-panel{
+    width: 90%;
+    margin-top: 40px;
+  }
+  .btn{
+    width: 200px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    margin-left: 13%;
+    font-size: 15px;
+    padding: 2% 2%;
+  }
+  .txtEntradas{
+    width: 80%;
+    padding: 2% 2%;
+    margin-left: 8%;
+    margin-bottom: 4%;
+  }
+  .txtIni{
+    margin-bottom: 15%;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 360px){
+  .main-panel{
+    margin-top: 30px;
+  }
+  .btn{
+    width: 200px;
+    padding: 2.5% 2.5%;
+    margin-left: 17%;
+    margin-bottom: 3%;
+    font-size: 17px;
+  }
+  .txtIni{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 375px){
+  .main-panel{
+    margin-top: 30px;
+  }
+  .btn{
+    width: 180px;
+    padding: 2% 2%;
+    margin-left: 22%;
+    font-size: 17px;
+  }
+  .txtIni{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 411px){
+  .main-painel{
+    margin-top: 100px;
+  }
+  .btn{
+    width: 200px;
+    padding: 2% 2%;
+    margin-left: 20%;
+    font-size: 18px;
+  }
+  .txtIni{
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 414px){
+  .main-painel{
+    margin-top: 100px;
+  }
+  .btn{
+    width: 200px;
+    padding: 2% 2%;
+    margin-left: 22%;
+    font-size: 18px;
+  }
+  .txtIni{
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 480px){
+  .btn{
+    width: 210px;
+    margin-left: 24%;
+  }
+}
+@media screen and (min-width: 520px){
+  .btn{
+    margin-left: 25%;
+  }
+}
+@media screen and (min-width: 560px){
+  .btn{
+    width: 230px;
+    margin-left: 25%;
+  }
+}
+@media screen and (min-width: 660px){
+  .main-panel{
+    margin-top: 10px;
+    width: 75%;
+  }
+  .btn{
+    width: 250px;
+    margin-left: 25%;
+  }
+}
+
+/*  Desktops  e Tablets */
+@media screen and (min-width: 768px){
+  .main-panel{
+    margin-top: 10px;
+    width: 75%;
+  }
+  .txtIni{
+    margin-bottom: 8%;
+    font-size: 28px;
+  }
+  .txtEntradas{
+    width: 80%;
+    padding: 2.2% 2.2%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+  }
+  .btn{
+    width: 260px;
+    padding: 1.5% 1.5%;
+    margin-left: 25%;
+    font-size: 22px;
+    padding: 2% 2%;
+  }
+}
+@media screen and (min-width: 960px){
+  .main-panel{
+    width: 75%;
+  }
+  .txtIni{
+    font-size: 32px;
+  }
+  .txtEntradas{
+    padding: 2.5% 2.5%;
+    margin-bottom: 2.5%;
+  }
+  .btn{
+    width: 300px;
+    margin-left: 27%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .main-panel{
+    width: 45%;
+    margin-top: 20px;
+  }
+  .txtIni{
+    font-size: 35px;
+  }
+  .txtEntradas{
+    width: 75%;
+    padding: 3% 3%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+
+  }
+  .btn{
+    width: 220px;
+    padding: 1.5% 1.5%;
+    margin-left: 25%;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1280px){
+  .main-panel{
+    width: 50%;
+    margin-top: 10px;
+  }
+  .txtIni{
+    margin-top: 5%;
+    margin-bottom: 6%;
+    font-size: 35px;
+  }
+  .txtEntradas{
+    width: 75%;
+    padding: 2.5% 2.5%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+
+  }
+  .btn{
+    width: 270px;
+    margin-left: 25%;
+    font-size: 25px;
+    padding: 2% 2%;
+  }
+}
+@media screen and (min-width: 1366px){
+  .main-panel{
+    width: 45%;
+    margin-top: 10px;
+  }
+  .txtIni{
+    margin-top: 5%;
+    margin-bottom: 6%;
+    font-size: 35px;
+  }
+  .txtEntradas{
+    width: 75%;
+    padding: 2% 2%;
+    margin-left: 8%;
+    margin-bottom: 0.5%;
+
+  }
+  .btn{
+    margin-top: 2%;
+    width: 270px;
+    padding: 2% 2%;
+    margin-left: 25%;
+    font-size: 25px;
+  }
+}

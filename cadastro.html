@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/localization/messages_pt_BR.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#tel").mask("(00) 0000-00009")
+        $("#tel").blur(function(event){
+          if($(this).val().length == 15){
+              $("#tel").mask("(00) 00000-0009")
+          }else {
+            $("#tel").mask("(00) 0000-00009")
+          }
+        })
+        $("#formCadastro").validate({
+          rules:{
+            email: {
+              email: true
+            }
+          }
+        })
+      })
+    </script>
+
+
+  </head>
+  <body class="bg-style">
+    <main>
+      <section class="main-panel">
+        <header>
+          <div class="txtIni">
+            <h1>
+              Cadastre-se
+            </h1>
+          </div>
+        </header>
+        <div>
+          <form  action="cadastrar.php" method="post" id="formCadastro">
+              <div>
+                <input type="text" name="nome"  class="txtEntradas" placeholder="Nome">
+              </div>
+              <div>
+                <input type="text" name="apelido" class="txtEntradas" placeholder="Apelido">
+              </div>
+              <div>
+                <input type="text" name="telefone" class="txtEntradas" id="tel" placeholder="Telefone (DD) XXXXX-XXXX">
+              </div>
+              <div>
+                <input type="email" name="email" class="txtEntradas" placeholder="Email de contato">
+              </div>
+              <div>
+                <a href="cadastrar.php"><input type="submit" class="btn" value="Cadastrar" ></a>
+              </div>
+          </form>
+          <div>
+            <a href="listar.php"><input type="submit" class="btn" value="Listar" ></a>
+          </div>
+        </div>
+      </section>
+  </body>
+
+</html>
